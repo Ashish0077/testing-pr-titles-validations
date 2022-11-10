@@ -19,11 +19,15 @@ jobs:
           types: |
             fix
             feat
+            style
           # Configure which scopes are allowed (newline delimited).
           scopes: |
-            core
-            ui
+            mobile-app
+            events
+            ta
+            hr
+            community
           # Configure that a scope must always be provided.
-          requireScope: true
+          requireScope: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
